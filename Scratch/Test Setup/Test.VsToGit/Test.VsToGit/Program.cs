@@ -7,7 +7,7 @@ namespace TestScript
     {
         static void Main(string[] args)
         {
-            TestClass test = new TestClass("Hello Bobby");
+            ITest test = new TestMessage("Hello Bobby");
             test.Run();
         }
     }
