@@ -1,9 +1,13 @@
 ﻿using System;
 using System.IO;
 
-namespace Bob
+//###########################################################################
+//                  Not Currently Connected to Project
+//###########################################################################
+
+namespace ConsoleIO.DirInfo
 {
-    public class ReadFile
+    public class ReadDir
     {
         public static void SubMain()
         {
