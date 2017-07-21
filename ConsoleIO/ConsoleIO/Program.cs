@@ -12,24 +12,7 @@ namespace ConsoleIO
             string filePath = Path.Combine(workingDirectory, "Data.txt");
             FileInfo file = new FileInfo(filePath);
             ReadByLine.LineByLine.Read();
-            /*if (file.Exists)
-            {
-
-                using (StreamReader reader = new StreamReader(file.FullName))
-                {
-                    var console = Console.In;
-                    
-                    for (int i = 0; i < 3; i++)
-                    {
-                        Console.SetIn(reader);
-                        Console.WriteLine(Console.ReadLine());
-                        Console.SetIn(console);
-                        Console.ReadLine();
-                    }
-                }
-            }
-            
-         */   
+            CSVRead.ReadCSV.PrintCSV(CSVRead.ReadCSV.FilePath);
             Console.WriteLine("End");
             Console.ReadLine();
         }
