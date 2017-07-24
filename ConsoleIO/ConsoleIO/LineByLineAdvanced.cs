@@ -8,7 +8,8 @@ namespace ConsoleIO.RBLAdv
         public static string File {get; set;} = "SoccerGameResults.csv";
         public static string DirPath { get; set; } = Directory.GetCurrentDirectory();
         public static string FullPath => Path.Combine(DirPath, File);
-        private static FileInfo _checkFile => new FileInfo(FullPath); 
+        private static FileInfo _checkFile => new FileInfo(FullPath);
+        private static List<string[]> _fileData = new List<string[]>();
 
         public static void Read()
         {
@@ -28,6 +29,29 @@ namespace ConsoleIO.RBLAdv
                         Console.WriteLine();
 
                     }
+                }
+            }
+        }
+
+        public static void ReadData()
+        {
+            if(_checkFile.Exists)
+            {
+                using (StreamReader reader = new StreamReader(_checkFile.Name))
+                {
+                    while(reader.Peek() != -1)
+                    {
+                        _fileData.Add(reader.ReadLine().Split(','));
+                    }
+
+                }
+                foreach(string[] line in _fileData)
+                {
+                    foreach(string word in line)
+                    {
+                        Console.Write(word + "\t");
+                    }
+                    Console.WriteLine();
                 }
             }
         }

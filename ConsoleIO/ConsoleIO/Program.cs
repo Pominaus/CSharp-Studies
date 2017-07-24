@@ -15,6 +15,7 @@ namespace ConsoleIO
             CSVRead.ReadCSV.PrintCSV(CSVRead.ReadCSV.FilePath);
             RBLAdv.LineByLineAdvanced.Test();
             RBLAdv.LineByLineAdvanced.Read();
+            RBLAdv.LineByLineAdvanced.ReadData();
             RBLAdv.LineByLineAdvanced.File = "TestFile.txt";
             RBLAdv.LineByLineAdvanced.DirPath = "/home/jon/bin/";
             RBLAdv.LineByLineAdvanced.Test();
