@@ -13,6 +13,13 @@ namespace ConsoleIO
             FileInfo file = new FileInfo(filePath);
             ReadByLine.LineByLine.Read();
             CSVRead.ReadCSV.PrintCSV(CSVRead.ReadCSV.FilePath);
+            RBLAdv.LineByLineAdvanced.Test();
+            RBLAdv.LineByLineAdvanced.Read();
+            RBLAdv.LineByLineAdvanced.File = "TestFile.txt";
+            RBLAdv.LineByLineAdvanced.DirPath = "/home/jon/bin/";
+            RBLAdv.LineByLineAdvanced.Test();
+            RBLAdv.LineByLineAdvanced.Read();
+
             Console.WriteLine("End");
             Console.ReadLine();
         }

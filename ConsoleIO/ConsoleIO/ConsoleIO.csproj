@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="LineByLine.cs" />
+    <Compile Include="LineByLineAdvanced.cs" />
     <Compile Include="practiceDirectory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
