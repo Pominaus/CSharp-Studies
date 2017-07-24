@@ -20,6 +20,11 @@ namespace ConsoleIO
             RBLAdv.LineByLineAdvanced.DirPath = "/home/jon/bin/";
             RBLAdv.LineByLineAdvanced.Test();
             RBLAdv.LineByLineAdvanced.Read();
+            GetCSV.GetResults.HomeAway isHome;
+            if(Enum.TryParse("Home", out isHome))
+                {
+                Console.WriteLine(isHome);
+            }
 
             Console.WriteLine("End");
             Console.ReadLine();

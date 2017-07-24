@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="GetResults.cs" />
     <Compile Include="LineByLine.cs" />
     <Compile Include="LineByLineAdvanced.cs" />
     <Compile Include="practiceDirectory.cs" />
