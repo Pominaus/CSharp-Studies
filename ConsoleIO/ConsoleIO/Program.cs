@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Collections.Generic;
 
 namespace ConsoleIO
 {
@@ -24,6 +25,11 @@ namespace ConsoleIO
             if(Enum.TryParse("Home", out isHome))
                 {
                 Console.WriteLine(isHome);
+            }
+            List<string> players = JsonRead.ReadJSON.GetPLayerNames();
+            foreach(string name in players)
+            {
+                Console.WriteLine(name);
             }
 
             Console.WriteLine("End");
